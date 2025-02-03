@@ -1,7 +1,7 @@
 const Voicemail = require("../models/voicemail");
 const { sendEmailNotification } = require("../services/emailService");
 const { sendSmsNotification } = require("../services/smsService");
-const { sendWhatsAppMessage } = require("../services/whatsappService");
+// const { sendWhatsAppMessage } = require("../services/whatsappService");
 
 exports.handleVoicemail = async (req, res) => {
   console.log("Incoming Twilio Request:", req.body);  // Log request data
